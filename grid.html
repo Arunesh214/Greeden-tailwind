@@ -1,0 +1,81 @@
+<style>
+    .body {
+        background-color: skyblue;
+        padding: 20px;
+        display: grid;
+    }
+
+    .header {
+        background-color: darkcyan;
+        padding: 5px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .center {
+        background-color: aquamarine;
+        padding: 10px;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        height: 200px;
+        gap: 10px;
+    }
+
+    .aside {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-row: span 2;
+        background-color: chocolate;
+    }
+
+    .article {
+        display: grid;
+        grid-row: span 2;
+        background-color: crimson;
+        text-align: center;
+
+    }
+
+    .footer {
+        background-color: darkcyan;
+        padding: 5px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .img {
+        background-color: orange;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px;
+        gap: 5px;
+    }
+    .textar{
+        display: flex;
+       align-items: end;
+       justify-content: center;   
+    }
+</style>
+<div class="body">
+    <div class="header">Header</div>
+    <div class="center">
+        <div class="aside">Aside</div>
+        <div class="article">
+            <div class="textar">Article</div>
+            <div class="img-container">
+                <div class="img">Image</div>
+                <div class="img">Image</div>
+                <div class="img">Image</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Footer</div>
+</div>
